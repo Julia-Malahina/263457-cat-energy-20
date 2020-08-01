@@ -14,12 +14,14 @@
   <header class="page-header">
     <div class="page-header__wrapper">
 
-      <a class="page-header__logo" href="#">
-        <img src="https://via.placeholder.com" width="33" height="37" alt="Cat Energy">
-      </a>
-      <a class="page-header__logo-text" href="#">
-        <img src="https://via.placeholder.com" width="101" height="18" alt="CAT Enegy">
-      </a>
+      <div class="page-header-logo">
+        <a class="page-header-logo__picture-mobile" href="#">
+          <img src="https://via.placeholder.com/150x150" width="33" height="37" alt="Cat Energy">
+        </a>
+        <a class="page-header-logo__text" href="#">
+          <img src="https://via.placeholder.com/150x150" width="101" height="18" alt="CAT Enegy">
+        </a>
+      </div>
 
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
@@ -34,21 +36,132 @@
 
     </div>
   </header>
-
   <!--Тело документа
 ====================================================== */ -->
 
-  <main class="page-main">
+  <main>
+    <section class="program">
+      <h2>Подбор программы</h2>
+      <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form action="" method="post">
+        <label for="login-field">Имя:*</label>
+        <input type="text" name="name" id="name-form">
+        <br>
+        <label for="password-field">Ваш Вес (кг):*</label>
+        <input type="text" name="weight" id="weight-form">
+        <br>
+        <label for="password-field">Возраст (лет):</label>
+        <input type="text" name="age" id="age-form">
+      </form>
+    </section>
 
+    <section class="program-selection">
+      <form action="#" method="get">
+        <label>
+          <input type="radio" name="pick" checked>
+        </label>
+        <label>
+          <input type="radio" name="pick" checked>
+        </label>
+        <label>
+          <input type="radio" name="pick" checked>
+        </label>
+      </form>
+    </section>
 
+    <section class="Contact">
+      <h2>Контактные данные (владельца кота)</h2>
+      <form action="#" method="GET">
+        <div class="adress">
+          <label for="email">E-mail:*</label>
+          <!-- Поле ввода электронной почты -->
+          <input type="email" name="email" required>
+        </div>
+        <div class="tel">
+          <label for="tel">Телефон:*</label>
+          <input type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
+            placeholder="Формат номера X-XXX-XXX">
+        </div>
+      </form>
+    </section>
+    <section class="comment">
+      <h2>Комментарий</h2>
+      <textarea name="comment" id="comment-field" rows="10">Раскажите обо всех повадках кота</textarea>
+    </section>
+
+    <section class="extra">
+      <form action="#" method="get">
+        <label>
+          <input type="checkbox" name="area" checked>сахарозаменитель
+        </label>
+        <label>
+          <input type="checkbox" name="area" checked>питьевая вода
+        </label>
+        <label>
+          <input type="checkbox" name="area" checked>молоко
+        </label>
+        <label>
+          <input type="checkbox" name="area" checked>витамины
+        </label>
+      </form>
+      <button>отправить заявку</button>
+      <p>* — Обязательные поля </p>
+
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__text">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <dl class="contacts-list">
+          <dt>Приглашаем к сотрудничеству дилеров!</dt>
+          <dd>ул Большая Конюшенная, д 19/8 Санкт-Петербург</dd>
+        </dl>
+      </div>
+      <div class="contacts__map">
+        <img src="https://via.placeholder.com/150x150" width="798" height="580" alt="Карта">
+      </div>
+    </section>
 
   </main>
 
   <!-- Подвал сайта -->
+  <footer class="page-footer">
+    <div class="page-footer__logo">
 
-  <footer class="main-footer">
+      <a class="page-footer__text" href="#">
+        <img src="https://via.placeholder.com/150x150" width="101" height="18" alt="CAT Enegy">
+      </a>
+    </div>
 
+    <div class="page-footer__social">
 
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--change"
+            href="https://https://vk.com/htmlacademy_ru"></a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--change"
+            href="https://https://instagram.com//htmlacademy_ru"></a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--change"
+            href="https://https://facebook.com/htmlacademy/"></a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="page-footer__copyright">
+
+      <picture>
+        <a class="page-footer__copyright-link page-footer__copyright-link--change" href="https://htmlacademy.ru/"></a>
+      </picture>
+    </div>
+
+    </div>
+
+    </div>
   </footer>
 </body>
 
