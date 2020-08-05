@@ -4,7 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Функциональное питание для котов</title>
+
+  <title>HTML Academy: Кэт энерджи</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+
 </head>
 
 <body class="page__body">
@@ -16,26 +21,27 @@
 
       <div class="page-header-logo">
         <a class="page-header-logo__picture-mobile" href="#">
-          <img src="https://via.placeholder.com/150x150" width="33" height="37" alt="Cat Energy">
+          <img src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
         </a>
-        <a class="page-header-logo__text" href="#">
-          <img src="https://via.placeholder.com/150x150" width="101" height="18" alt="CAT Enegy">
-        </a>
+
       </div>
 
-      <nav class="main-nav">
+      <nav class="nav nav--closed nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="nav__wwapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--activ">
-            <a href="#">Главная</a></li>
+          <li class="site-list__item site-list__item--activ">Главная</li>
           <li class="site-list__item site-list__item--activ">
             <a href="catalog.html">Каталог продукции</a></li>
           <li class="site-list__item site-list__item--activ">
             <a href="form.html">Подбор программы</a></li>
         </ul>
+      </div>
       </nav>
 
     </div>
   </header>
+
   <!--Тело документа
 ====================================================== */ -->
 
